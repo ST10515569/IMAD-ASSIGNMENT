@@ -65,9 +65,9 @@ class MainActivity : AppCompatActivity() {
                 tvTitle.text="Leave a thoughtful comment on a friends post"
 
             else{
-
+                tvTitle.text="please enter valid information:Morning,Midmorning,Afternoon,Afternoon snack,Dinner,Night"
                 Toast.makeText(
-                    this,"please enter valid information:Morning,Midmorning,Afternoon,Afternoon snack, Dinner,Night",
+                    this,"please enter valid information",
                     Toast.LENGTH_SHORT
                 ).show()
 
