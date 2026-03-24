@@ -65,16 +65,21 @@ class MainActivity : AppCompatActivity() {
                 tvTitle.text="Leave a thoughtful comment on a friends post"
 
             else{
-                tvTitle.text="please enter valid information"
 
                 Toast.makeText(
                     this,"please enter valid information",
                     Toast.LENGTH_SHORT
                 ).show()
 
+
             }
 
 
+        }
+        //clear all input
+        btnReset.setOnClickListener {
+            tvTitle.text="Social Sparks"
+            edtTimeOfDay.text.clear()
         }
 
     }
