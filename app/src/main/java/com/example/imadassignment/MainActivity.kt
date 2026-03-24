@@ -67,7 +67,7 @@ class MainActivity : AppCompatActivity() {
             else{
 
                 Toast.makeText(
-                    this,"please enter valid information",
+                    this,"please enter valid information:Morning,Midmorning,Afternoon,Afternoon snack, Dinner,Night",
                     Toast.LENGTH_SHORT
                 ).show()
 
