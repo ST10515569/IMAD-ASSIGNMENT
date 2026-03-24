@@ -46,25 +46,25 @@ class MainActivity : AppCompatActivity() {
 
             //check time of day
             if (timeofday == "Morning")
-                println("Send a Good Morning text to family member")
+                tvTitle.text="Send a Good Morning text to family member"
 
             else if (timeofday == "Midmorning")
-                println("Reach out to a colleague with a quick 'Thank you'")
+                tvTitle.text="Reach out to a colleague with a quick 'Thank you'"
 
             else if (timeofday == "Afternoon")
-                println("Share a funny meme or interesting link with a friend")
+                tvTitle.text="Share a funny meme or interesting link with a friend"
 
             else if (timeofday == "Afternoon snack")
-                println("Send a quick 'thinking of you' message")
+                tvTitle.text="Send a quick 'thinking of you' message"
 
             else if (timeofday =="Dinner")
-                println("Call a friend for a 5 minute catch up")
+                tvTitle.text="Call a friend for a 5 minute catch up"
 
             else if (timeofday =="Night")
-                println("Leave a thoughtful comment on a friends post")
+                tvTitle.text="Leave a thoughtful comment on a friends post"
 
             else{
-                println("please enter valid information")
+                tvTitle.text="please enter valid information"
             }
 
 
