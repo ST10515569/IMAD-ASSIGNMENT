@@ -1,6 +1,9 @@
 package com.example.imadassignment
 
 import android.os.Bundle
+import android.widget.Button
+import android.widget.EditText
+import android.widget.TextView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -15,6 +18,37 @@ class MainActivity : AppCompatActivity() {
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
+        }//viewCompact
+        //Code goes here
+        //Declarations
+
+        val tvTitle = findViewById<TextView>(R.id.tvTitle)
+        val edtTimeOfDay =findViewById<EditText>(R.id.edtTimeOfDay)
+        val btnEnter = findViewById<Button>(R.id.btnEnter)
+        val btnReset = findViewById<Button>(R.id.btnReset)
+
+        var timeofday: String
+        var Morning: String
+        var Midmorning: String
+        var Afternoon: String
+        var Afternoonsnack: String
+        var Dinner: String
+        var Night: String
+
+        btnEnter.setOnClickListener {
+            timeofday = edtTimeOfDay.text.toString()
+            Morning = edtTimeOfDay.text.toString()
+            Midmorning = edtTimeOfDay.text.toString()
+            Afternoon = edtTimeOfDay.text.toString()
+            Afternoonsnack = edtTimeOfDay.text.toString()
+            Dinner = edtTimeOfDay.text.toString()
+            Night = edtTimeOfDay.text.toString()
+
+            //check time of day
+            
+
+
         }
+
     }
 }
