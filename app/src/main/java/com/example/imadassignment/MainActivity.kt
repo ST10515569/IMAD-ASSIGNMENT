@@ -45,7 +45,7 @@ class MainActivity : AppCompatActivity() {
             Dinner = edtTimeOfDay.text.toString()
             Night = edtTimeOfDay.text.toString()
 
-            //check time of day
+            //Check time of day
             if (timeofday == "Morning")
                 tvTitle.text="Send a Good Morning text to family member"
 
@@ -65,15 +65,14 @@ class MainActivity : AppCompatActivity() {
                 tvTitle.text="Leave a thoughtful comment on a friends post"
 
             else{
-                tvTitle.text="please enter valid information:Morning,Midmorning,Afternoon,Afternoon snack,Dinner,Night"
+                tvTitle.text="Please enter valid information:Morning,Midmorning,Afternoon,Afternoon snack,Dinner,Night"
                 Toast.makeText(
-                    this,"please enter valid information",
+                    this,"Please enter valid information",
                     Toast.LENGTH_SHORT
                 ).show()
 
 
             }
-
 
         }
         //clear all input
